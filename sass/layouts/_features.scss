@@ -1,0 +1,36 @@
+.features {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .features-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .features-list__item {
+    width: (100% - 30px) / 2;
+  }
+}
+.features-list__item {
+  padding-bottom: 30px;
+}
+.features-list__icon {
+  text-align: center;
+  background-color: #f5f4fa;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  margin-bottom: 30px;
+}
+.features-list__heading {
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.features-list__text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: $text-color;
+}
