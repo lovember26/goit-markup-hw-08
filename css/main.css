@@ -335,7 +335,6 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 96px;
     gap: 50px;
   }
 }
