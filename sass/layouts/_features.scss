@@ -6,13 +6,15 @@
   .features-list {
     display: flex;
     flex-wrap: wrap;
-  }
-  .features-list__item {
-    width: (100% - 30px) / 2;
+    gap: 30px;
   }
 }
 .features-list__item {
   padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
 }
 .features-list__icon {
   text-align: center;
@@ -24,6 +26,9 @@
 .features-list__heading {
   margin-bottom: 10px;
   text-align: center;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;

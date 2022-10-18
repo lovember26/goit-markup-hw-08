@@ -42,8 +42,8 @@
         </button>
         <nav class="header-nav">
           <ul class="nav-list list">
-            <li class="header__item">
-              <a href="./index.html" class="header__link current">Студія</a>
+            <li class="header__item current">
+              <a href="./index.html" class="header__link">Студія</a>
             </li>
             <li class="header__item">
               <a href="./portfolio.html" class="header__link">Портфоліо</a>
@@ -180,11 +180,17 @@
             <li class="team-item">
               <img
                 srcset="
-                  ./images/team/imgteam1-480.jpg    1x,
-                  ./images/team/imgteam1-480@2x.jpg 2x
+                  ./images/team/imgteam1-270.jpg 270w,
+                  ./images/team/imgteam1-354.jpg 354w,
+                  ./images/team/imgteam1-450.jpg 450w,
+                  ./images/team/imgteam1-540.jpg 540w,
+                  ./images/team/imgteam1-708.jpg 708w,
+                  ./images/team/imgteam1-900.jpg 900w
                 "
-                src="./images/team/imgteam1-480.jpg"
+                sizes="(min-width:1200px) 270px,(min-width:768) 354px, 450px"
+                src="./images/team/imgteam1-270.jpg"
                 alt="Чоловік в коричневій сорочці"
+                class="team-item__img"
               />
               <div class="team-item__text">
                 <h3 class="team-item__name">Ігор Дем'яненко</h3>
@@ -232,11 +238,17 @@
             <li class="team-item">
               <img
                 srcset="
-                  ./images/team/imgteam2-480.jpg    1x,
-                  ./images/team/imgteam2-480@2x.jpg 2x
+                  ./images/team/imgteam2-270.jpg 270w,
+                  ./images/team/imgteam2-354.jpg 354w,
+                  ./images/team/imgteam2-450.jpg 450w,
+                  ./images/team/imgteam2-540.jpg 540w,
+                  ./images/team/imgteam2-708.jpg 708w,
+                  ./images/team/imgteam2-900.jpg 900w
                 "
-                src="./images/team/imgteam2-480.jpg"
+                sizes="(min-width:1200px) 270px,(min-width:768) 354px,450px"
+                src="./images/team/imgteam2-270.jpg"
                 alt="Жінка в окулярах"
+                class="team-item__img"
               />
 
               <div class="team-item__text">
@@ -293,11 +305,17 @@
             <li class="team-item">
               <img
                 srcset="
-                  ./images/team/imgteam3-480.jpg    1x,
-                  ./images/team/imgteam3-480@2x.jpg 2x
+                  ./images/team/imgteam3-270.jpg 270w,
+                  ./images/team/imgteam3-354.jpg 354w,
+                  ./images/team/imgteam3-450.jpg 450w,
+                  ./images/team/imgteam3-540.jpg 540w,
+                  ./images/team/imgteam3-708.jpg 708w,
+                  ./images/team/imgteam3-900.jpg 900w
                 "
-                src="./images/team/imgteam3-480.jpg"
+                sizes="(min-width:1200px) 270px,(min-width:768) 354px,450px"
+                src="./images/team/imgteam3-270.jpg"
                 alt="Чоловік в блакитній сорочці"
+                class="team-item__img"
               />
 
               <div class="team-item__text">
@@ -354,11 +372,17 @@
             <li class="team-item">
               <img
                 srcset="
-                  ./images/team/imgteam4-480.jpg    1x,
-                  ./images/team/imgteam4-480@2x.jpg 2x
+                  ./images/team/imgteam4-270.jpg 270w,
+                  ./images/team/imgteam4-354.jpg 354w,
+                  ./images/team/imgteam4-450.jpg 450w,
+                  ./images/team/imgteam4-540.jpg 540w,
+                  ./images/team/imgteam4-708.jpg 708w,
+                  ./images/team/imgteam4-900.jpg 900w
                 "
-                src="./images/team/imgteam4-480.jpg"
+                sizes="(min-width:1200px) 270px,(min-width:768) 354px,450px"
+                src="./images/team/imgteam4-270.jpg"
                 alt="Чоловік в чорній футболці"
+                class="team-item__img"
               />
 
               <div class="team-item__text">
@@ -457,83 +481,85 @@
     </main>
     <footer class="footer">
       <div class="container footer-wrapper">
-        <div>
-          <a href="./index.html" lang="en" class="logo logo--footer"
-            >Web<span class="logo__end--white">Studio</span></a
-          >
-          <address>
-            <ul class="footer-contacts list">
-              <li class="footer-contacts__item">
+        <div class="footer-wrapper__tablet">
+          <div>
+            <a href="./index.html" lang="en" class="logo logo--footer"
+              >Web<span class="logo__end--white">Studio</span></a
+            >
+            <address>
+              <ul class="footer-contacts list">
+                <li class="footer-contacts__item">
+                  <a
+                    href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                    target="_blank"
+                    rel="noopener noreferrer nofollow"
+                    class="footer-contacts__link"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="footer-contacts-item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    lang="en"
+                    class="footer-contacts__link footer-contacts__link--grey"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-contacts__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="footer-contacts__link footer-contacts__link--grey"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer-socials">
+            <p class="footer-socials__heading">приєднуйтесь</p>
+            <ul class="footer-socials__list list">
+              <li>
                 <a
-                  href="https://goo.gl/maps/CPtrU1FHBa2aNyZL9"
+                  class="footer-socials__link"
+                  href="https://www.instagram.com"
                   target="_blank"
                   rel="noopener noreferrer nofollow"
-                  class="footer-contacts__link"
-                  >м. Київ, пр-т Лесі Українки, 26</a
-                >
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram-2"></use></svg
+                ></a>
               </li>
-              <li class="footer-contacts-item">
+              <li>
                 <a
-                  href="mailto:info@devstudio.com"
-                  lang="en"
-                  class="footer-contacts__link footer-contacts__link--grey"
-                  >info@devstudio.com</a
-                >
+                  class="footer-socials__link"
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter-2"></use></svg
+                ></a>
               </li>
-              <li class="footer-contacts__item">
+              <li>
                 <a
-                  href="tel:+380961111111"
-                  class="footer-contacts__link footer-contacts__link--grey"
-                  >+38 096 111 11 11</a
-                >
+                  class="footer-socials__link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook-2"></use></svg
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="footer-socials__link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer nofollow"
+                  ><svg width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin-2"></use></svg
+                ></a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer-socials">
-          <p class="footer-socials__heading">приєднуйтесь</p>
-          <ul class="footer-socials__list list">
-            <li>
-              <a
-                class="footer-socials__link"
-                href="https://www.instagram.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram-2"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a
-                class="footer-socials__link"
-                href="https://www.twitter.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter-2"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a
-                class="footer-socials__link"
-                href="https://www.facebook.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook-2"></use></svg
-              ></a>
-            </li>
-            <li>
-              <a
-                class="footer-socials__link"
-                href="https://www.linkedin.com"
-                target="_blank"
-                rel="noopener noreferrer nofollow"
-                ><svg width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin-2"></use></svg
-              ></a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div>
           <p class="footer-heading-form">Підпишіться на розсилку</p>
