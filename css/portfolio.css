@@ -463,12 +463,18 @@ ul {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 320px) {
+  .contacts__link {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 320px) and (min-width: 1200px) {
   .contacts__link {
     font-size: 14px;
     line-height: 1.14;
   }
 }
+
 .contacts__icons {
   display: none;
 }
