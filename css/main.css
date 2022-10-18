@@ -310,6 +310,7 @@ ul {
   .header-menu {
     -webkit-transform: translateX(0);
             transform: translateX(0);
+    opacity: 1;
     height: 80px;
     position: static;
     display: -webkit-box;
