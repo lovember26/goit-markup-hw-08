@@ -1,6 +1,10 @@
 .clients {
   padding: 60px 0;
   text-align: center;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &__heading {
     font-size: 28px;
@@ -19,12 +23,15 @@
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 30px * 3) / 3);
     }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 30px * 6) / 6);
+    }
   }
 }
 .clients-item__link {
   display: block;
 
-  padding: 16px 32px;
+  padding: 16px 30px;
   fill: $icons-1-color;
   border: 1px solid #afb1b8;
   border-radius: 4px;

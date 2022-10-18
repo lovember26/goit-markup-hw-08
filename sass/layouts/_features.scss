@@ -1,6 +1,10 @@
 .features {
   padding-top: 60px;
   padding-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 118px;
+  }
 }
 @media screen and (min-width: 768px) {
   .features-list {
@@ -14,6 +18,10 @@
 
   @media screen and (min-width: 768px) {
     width: calc((100% - 30px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 30px * 3) / 4);
+    padding-bottom: 0;
   }
 }
 .features-list__icon {

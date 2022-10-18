@@ -46,11 +46,39 @@
     }
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(/images/hero/hero-1200.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/hero/hero-1200@2x.jpg");
+    }
+  }
+}
 
 .hero__heading {
   margin-bottom: 30px;
   font-size: 26px;
   line-height: 1.61;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.3636;
+  }
+
   font-weight: 900;
 
   letter-spacing: 0.06em;
