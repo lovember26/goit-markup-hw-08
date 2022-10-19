@@ -499,6 +499,11 @@ ul {
   .contacts__icons {
     display: inline-block;
     vertical-align: middle;
+    margin-right: 8px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__icons {
     margin-right: 10px;
   }
 }
