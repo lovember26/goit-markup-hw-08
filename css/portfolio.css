@@ -683,6 +683,7 @@ ul {
   .footer-wrapper__tablet {
     gap: 70px;
     margin-right: 93px;
+    margin-bottom: 0;
   }
 }
 
@@ -691,9 +692,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
   address {
     width: 231px;
@@ -701,6 +702,12 @@ ul {
 }
 .footer-contacts {
   margin-top: 20px;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    margin-bottom: 0;
+  }
 }
 
 .footer-contacts__link {
