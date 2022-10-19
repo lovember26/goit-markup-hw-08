@@ -7,9 +7,14 @@
 }
 .portfolio-buttons {
   display: flex;
-  margin-bottom: 50px;
-  gap: 8px;
   justify-content: center;
+  gap: 8px;
+  @media screen and (min-width: 480px) {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  margin-bottom: 50px;
 }
 
 .portfolio-btn {
@@ -19,7 +24,7 @@
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.625;
   text-align: center;
   border-radius: 4px;
   border: none;
@@ -29,8 +34,8 @@
 
   &:hover,
   &:focus {
-    color: var(--icons-white);
-    background-color: var(--accent-color);
+    color: $icons-white;
+    background-color: $accent-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
 }
@@ -79,7 +84,7 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  color: var(--icons-white);
+  color: $icons-white;
   background: rgba(33, 150, 243, 0.9);
 }
 
@@ -94,14 +99,14 @@
   &__heading {
     margin-bottom: 4px;
 
-    color: var(--heading-color);
+    color: $heading-color;
 
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
   }
   &__text {
-    color: var(--text-color);
+    color: $text-color;
 
     font-size: 16px;
     line-height: 1.88;

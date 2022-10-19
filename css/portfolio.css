@@ -498,8 +498,21 @@ ul {
 @media screen and (min-width: 768px) {
   .contacts__icons {
     display: inline-block;
-    width: 14px;
-    height: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacs__icons--mail {
+    width: 16px;
+    height: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contacs__icons--tel {
+    width: 10px;
+    height: 16px;
   }
 }
 
@@ -561,11 +574,20 @@ ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 50px;
-  gap: 8px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
+}
+@media screen and (min-width: 480px) {
+  .portfolio-buttons {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .portfolio-btn {
@@ -575,7 +597,7 @@ ul {
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.625;
   text-align: center;
   border-radius: 4px;
   border: none;
@@ -585,8 +607,8 @@ ul {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-btn:hover, .portfolio-btn:focus {
-  color: var(--icons-white);
-  background-color: var(--accent-color);
+  color: #fff;
+  background-color: #2196f3;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -647,7 +669,7 @@ ul {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.56;
-  color: var(--icons-white);
+  color: #fff;
   background: rgba(33, 150, 243, 0.9);
 }
 
@@ -662,13 +684,13 @@ ul {
 }
 .portfolio-descr__heading {
   margin-bottom: 4px;
-  color: var(--heading-color);
+  color: #212121;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
 .portfolio-descr__text {
-  color: var(--text-color);
+  color: #757575;
   font-size: 16px;
   line-height: 1.88;
 }

@@ -23,7 +23,7 @@
       url("../images/hero-480@2x.jpg");
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 481px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -46,7 +46,7 @@
     }
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 769px) {
   .hero {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -73,13 +73,20 @@
 .hero__heading {
   margin-bottom: 30px;
   font-size: 20px;
+
   @media screen and (min-width: 480px) {
     font-size: 26px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 360px;
   }
   line-height: 1.61;
+
   @media screen and (min-width: 1200px) {
     font-size: 44px;
     line-height: 1.3636;
+
+    width: 696px;
   }
 
   font-weight: 900;

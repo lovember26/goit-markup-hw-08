@@ -212,8 +212,21 @@
   display: none;
   @media screen and (min-width: 768px) {
     display: inline-block;
-    width: 14px;
-    height: 10px;
+
+    margin-right: 10px;
+  }
+}
+.contacs__icons--mail {
+  @media screen and (min-width: 1200px) {
+    width: 16px;
+    height: 12px;
+  }
+}
+.contacs__icons--tel {
+  @media screen and (min-width: 1200px) {
+    width: 10px;
+
+    height: 16px;
   }
 }
 @media screen and (min-width: 768px) {
