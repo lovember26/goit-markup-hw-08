@@ -24,7 +24,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 450px;
+  width: 300px;
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
   margin-top: 93px;
   padding: 40px;
 
@@ -61,7 +64,10 @@
 }
 .modal-text {
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
+  @media screen and (min-width: 480px) {
+    font-size: 20px;
+  }
   line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
@@ -135,7 +141,16 @@
   margin-bottom: 30px;
   text-align: center;
   align-self: center;
-  font-size: 12px;
+  font-size: 8px;
+  line-height: 1.67;
+  @media screen and (min-width: 480px) {
+    font-size: 12px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
   line-height: 1.67;
 
   color: $text-color;

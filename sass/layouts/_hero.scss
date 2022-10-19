@@ -72,7 +72,10 @@
 
 .hero__heading {
   margin-bottom: 30px;
-  font-size: 26px;
+  font-size: 20px;
+  @media screen and (min-width: 480px) {
+    font-size: 26px;
+  }
   line-height: 1.61;
   @media screen and (min-width: 1200px) {
     font-size: 44px;
@@ -93,7 +96,10 @@
   font-family: inherit;
   cursor: pointer;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 12px;
+  @media screen and (min-width: 480px) {
+    font-size: 16px;
+  }
   line-height: 1.875;
   letter-spacing: 0.06em;
   border: none;
