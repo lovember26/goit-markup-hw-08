@@ -79,7 +79,14 @@
     display: block;
   }
 }
-
+.portfolio-card__link--first {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.portfolio-descr--first {
+  flex-grow: 1;
+}
 .portfolio-card__wrapper {
   position: relative;
   overflow: hidden;
