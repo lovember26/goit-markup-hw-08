@@ -575,25 +575,23 @@ ul {
 .portfolio {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    padding: 94px 0;
+  }
+}
 
 .portfolio-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 8px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px;
-}
-@media screen and (min-width: 480px) {
-  .portfolio-buttons {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
 }
 @media screen and (min-width: 768px) {
   .portfolio-buttons {
@@ -605,6 +603,11 @@ ul {
 @media screen and (min-width: 768px) {
   .portfolio-buttons {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-buttons {
+    margin-bottom: 50px;
   }
 }
 
